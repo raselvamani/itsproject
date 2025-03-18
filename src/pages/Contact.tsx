@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
 
     return (
         <Box sx={{p: 3, maxWidth: 600, mx: 'auto'}}>
-            <Typography variant='h4' sx={{mb: 3}}>
+            <Typography variant='h4' fontWeight='bold' sx={{mb: 3}}>
                 Contact Us
             </Typography>
             <form onSubmit={handleSubmit}>

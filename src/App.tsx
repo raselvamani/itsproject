@@ -20,6 +20,7 @@ const App: React.FC = () => {
         <Box component='main' sx={{flexGrow: 1, p: 3}}>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/home' element={<Home />} />
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/about' element={<About />} />

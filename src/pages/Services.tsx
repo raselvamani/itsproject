@@ -4,40 +4,40 @@ import {Box, Typography, Grid, Card, CardContent, CardMedia} from '@mui/material
 const services = [
     {
         title: 'AI training', 
-        image: 'images/ai-training.jpg', 
-        description: 'We provide AI training for individuals and organizations.'
+        image: process.env.PUBLIC_URL + "/images/ai-training.jpg", 
+        description: "Learn from experts with personalized training sessions. Whether you're looking to upskill your team or learn new technologies, our personalized tutoring and training services are designed to meet your needs. We offer one-on-one sessions in various IT domains, including AI/ML, web development, and more."
     },
     {
         title: 'AI/ML Model Development', 
-        image: '/images/ai-model.jpg', 
-        description: 'We develop AI/ML models for various applications.'
+        image: process.env.PUBLIC_URL + "/images/ai-model.jpg", 
+        description: "Unlock the potential of AI and Machine Learning to solve complex business challenges. Our AI/ML experts build custom models tailored to your needs, from data collection and preprocessing to model training, testing, and deployment. Whether it’s predictive analytics, natural language processing (NLP), or computer vision, we create intelligent solutions that drive business growth."
     },
     {
         title: 'Chatbot Development', 
-        image: '/images/ai-chatbot.jpg',
-        description: 'We develop chatbots for various applications.'
+        image: process.env.PUBLIC_URL + "/images/ai-chatbot.jpg",
+        description: "Enhance user engagement and provide 24/7 support with AI-powered chatbots. Our chatbot development service enables you to create conversational bots that can assist with customer service, lead generation, and user interaction. Using natural language processing, we ensure that your bots understand and respond intelligently to customer queries."
     },
     {
         title: 'Web App Development', 
-        image: '/images/webdesign.jpg',
-        description: 'We develop web applications for various domains.'
+        image: process.env.PUBLIC_URL + "/images/webdesign.jpg",
+        description: "Build powerful and responsive web applications that elevate your business. We design and develop web apps that are user-friendly, scalable, and secure. From front-end design to back-end integration, our team ensures your app is optimized for performance and provides seamless user experiences across all devices."
     },
     {
         title: 'Tutoring', 
-        image: '/images/tutoring.jpg',
-        description: 'We provide tutoring services for various subjects from kindergarden to 12th grade.'
+        image: process.env.PUBLIC_URL + "/images/tutoring.jpg",
+        description: "Learn from experts with personalized training sessions. Whether you're looking to upskill your team or learn new technologies, our personalized tutoring and training services are designed to meet your needs. We offer one-on-one sessions in various IT domains, including AI/ML, web development, and more."
     },
     {
-        title: 'IT Consulting', 
-        image: '/images/consulting.jpg',
-        description: 'We provide IT consulting services for organizations.'
+        title: "IT Consulting", 
+        image: process.env.PUBLIC_URL + "/images/consulting.jpg",
+        description: "Strategic IT consulting to help you optimize your technology infrastructure. Our IT consulting services are designed to guide your business in making informed decisions about technology adoption, digital transformation, cybersecurity, and more. We’ll help you create a roadmap for implementing IT solutions that align with your business goals."
     },
 ];
 
 const Services: React.FC = () => {
     return (
         <Box sx={{p: 3}}>
-            <Typography variant='h4' sx={{mb: 3}}>
+            <Typography variant='h4' fontWeight='bold' sx={{mb: 3}}>
                 Our Services
             </Typography>
             <Grid container spacing={3}>
